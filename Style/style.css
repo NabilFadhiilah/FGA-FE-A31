@@ -121,3 +121,48 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.5s;
 }
+// Footer
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color:#2b383f;
+}
+.main-footer h3{
+  margin-top:20px;
+  font-size:30px;
+  color:white;
+}
+.main-footer p{
+  color:white;
+}
+.main-footer img{
+  width:20px;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-media li{
+  margin:20px;
+}
+
+.copyright {
+  padding:10px;
+  text-align: center;
+  max-height:50px;
+  background-color:rgb(34, 49, 52);
+}
+
+.copyright p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color:white;
+}
