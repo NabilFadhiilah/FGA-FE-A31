@@ -1,4 +1,6 @@
-/* Reset CSS (JANGAN DIHAPUS) */
+*{
+    box-sizing: border-box;
+}
 html,
 body,
 ul,
@@ -17,7 +19,7 @@ div {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -31,7 +33,7 @@ a {
 
 /* Ketik code Anda dibawah */
 .container {
-  width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -68,25 +70,42 @@ a {
 }
 
 .Selengkapnya {
-  border: white solid thin;
+  border: white solid 1px;
   display: inline-block;
+  color: black;
+}
+
+.Selengkapnya:hover{
+    background-color:#2b383f;
+    border: 1px solid #2b383f;
+    color: white;
+    transition: all 0.6s ease;
+    opacity: 1;
 }
 
 .Hubungi-Kami {
-  background-color: #2b383f;
+  background-color: rgba(43, 56, 63, 1);
+  color: white;
+}
+
+.Hubungi-Kami:hover{
+    border: 1px solid white;
+    color: black;
+    background-color:transparent;
+    transition: all 0.6s ease;
 }
 
 .btn {
-  padding: 12px 24px;
-  color: white;
+  margin-right: 10px;
+  padding: 12px 25px;
+  /* color: white; */
   display: inline-block;
-  opacity: 0.8;
   border-radius: 4px;
 }
 
-.btn:hover {
+/* .btn:hover {
   opacity: 1;
-}
+} */
 
 nav {
   height: 65px;
@@ -121,7 +140,58 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.5s;
 }
-// Footer
+
+/* PROGRESS BAR */
+.container .progress{
+    height: 300px;
+}
+.progress{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.progress-element{
+    width:25%;
+    float: left;
+    flex: 0 1 220px;
+}
+
+progress{
+    background: #f9c74f;
+    color: #f9c74f;
+}
+
+progress::-webkit-progress-value {
+    background: #f9c74f;
+  }
+  
+progress::-moz-progress-bar {
+    background: #f9c74f;
+}
+
+.progress-label {
+    position: relative;
+  }
+  
+.progress-label::after {
+    content: "";
+    position: absolute;
+    top:0;
+  }
+
+.judul{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.deskripsi{
+    text-align: center;
+    margin-bottom:80px;
+}
+
+/* FOOTER */
 footer {
   bottom: 0;
   left: 0;
