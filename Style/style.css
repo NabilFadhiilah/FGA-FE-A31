@@ -191,6 +191,17 @@ progress::-moz-progress-bar {
     margin-bottom:80px;
 }
 
+/* Portofolio */
+.Portofolio {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.Produk {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 /* FOOTER */
 footer {
   bottom: 0;
