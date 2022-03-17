@@ -33,6 +33,7 @@ a {
 
 /* Ketik code Anda dibawah */
 .container {
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -142,18 +143,18 @@ nav {
 }
 
 /* PROGRESS BAR */
-.container .progress{
+/* .container .progress{
     height: 300px;
-}
+} */
 .progress{
     display:flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
 .progress-element{
-    width:25%;
-    float: left;
+    /* width:25%;
+    float: left; */
     flex: 0 1 220px;
 }
 
@@ -180,9 +181,13 @@ progress::-moz-progress-bar {
     top:0;
   }
 
+.txt-desc{
+  margin-bottom:50px;
+}
+
 .judul{
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -264,6 +269,21 @@ footer {
   .copyright p {
     font-size:12px;
   }
+  .progress{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .progress-element{
+    /* flex: auto; */
+    width:50%;
+  }
+  .judul{
+    font-size: 14px;
+  }
+  .deskripsi{
+    font-size: 14px;
+    text-align: left;
+  }
 }
 @media(max-width:670px){
   .main-footer h3{
@@ -280,5 +300,22 @@ footer {
   }
   .copyright p {
     font-size:10px;
+  }
+  .progress{
+    width:100%;
+    display:flex;
+    justify-content: center;
+  }
+  .txt-desc{
+    margin-bottom: 20px;
+  }
+  .progress{
+    flex-direction:column; ;
+  }
+  .progress-element{
+    margin: 0 auto;
+  }
+  .txt-desc{
+    margin-bottom: 0px;
   }
 }
